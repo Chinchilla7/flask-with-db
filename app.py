@@ -13,8 +13,8 @@ def get_db_connection():
     conn.row_factory = sqlite3.Row # create 'dictionary cursor', returning 'dictionary' rows after fetchall or fetchone
     return conn
 
-@app.route('/')
-def index():
+@app.route('/patients')
+def patients_list():
     db = get_db_connection()
     patientListSql = db.execute('SELECT * FROM patient_table').fetchall()
     db.close()
