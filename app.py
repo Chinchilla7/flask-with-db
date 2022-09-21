@@ -27,7 +27,7 @@ def bootstrap():
     patientListSql = conn.execute('SELECT * FROM patient_table').fetchall()
     conn.close()
     print('patientListSql:', patientListSql)
-    return render_template('bootstrap_example.html', listPatients=patientListSql) # note, these are two variables, patientsList is what we can then look up in the .html, and the patientsListSql is the actual data we are pulling from the sqlite db
+    return render_template('bootstrap.html', listPatients=patientListSql) # note, these are two variables, patientsList is what we can then look up in the .html, and the patientsListSql is the actual data we are pulling from the sqlite db
 
 
 if __name__ == '__main__':
