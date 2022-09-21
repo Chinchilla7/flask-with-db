@@ -12,7 +12,7 @@
 
             <table>
                 <tr>  
-                    <!-- so this part with the TH tags, deals with setting the table names -->
+                    <!-- setting the table names -->
                     <th> Medical Record Number (MRN) </th>
                     <th> First Name (FN) </th>
                     <th> Last Name (LN) </th>
@@ -32,7 +32,11 @@
                         <td> {{ i.mrn }} </td>
                         <td> {{ i.firstname }} </td>
                         <td> {{ i.lastName }} </td>
+                        <td> {{ i.gender }} </td>
                         <td> {{ i.dob }} </td>
+                        <td> {{ i.city }} </td>
+                        <td> {{ i.insurance }} </td>
+                        <td> {{ i.date_of_admission }} </td>
                     </tr>
                 {% endfor %}
             </table>
