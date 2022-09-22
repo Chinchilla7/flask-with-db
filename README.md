@@ -11,4 +11,4 @@ The flask app is connected to the local SQLite DB in this repo
 Inside the flask app, a route called ‘/patients’ display the list of
 patients retrieved from the SQlite DB.
 
-The flask app will be deployed to a VM on GCP.
+The flask app will be deployed to a VM on GCP. (http://35.239.107.74/patients)
